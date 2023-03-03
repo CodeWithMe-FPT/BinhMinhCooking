@@ -1,0 +1,104 @@
+.header-main-container {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.banner-top {
+    width: 100%;
+    display: block;
+}
+.header {
+}
+
+.header-main {
+    width: 80%;
+    padding: 0 8px;
+    margin: 0 auto;
+}
+
+.header-top-container {
+    padding: 24px 0;
+    display: flex;
+}
+
+.logo-web {
+    width: 75% !important;
+    height: auto;
+    max-width: 100%;
+}
+
+.logo {
+    position: relative;
+    height: 44px;
+}
+
+.link-web {
+    font-size: 32px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 153px;
+    height: 37px;
+}
+
+.phone-container {
+    margin-left: auto;
+    color: rgba(215, 14, 21, 1);
+    display: flex;
+}
+
+.phone-logo {
+    animation: pulse 1.2s ease infinite;
+}
+
+.phone-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    align-items: center;
+}
+
+.phone-text {
+    font-size: 14px;
+    color: black;
+}
+
+.phone-number {
+    font-size: 16px;
+    color: rgba(215, 14, 21, 1);
+    font-weight: bolder;
+}
+
+.mega-menu-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom {
+    background: #d70e15;
+}
+
+.menu-item-container {
+    margin-right: 20px;
+}
+
+.menu-item {
+    padding-left: 10px;
+    padding-right: 50px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-text {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+@keyframes pulse {
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
