@@ -1,10 +1,14 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import { MenuIcon } from '~/assets/icons/icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faUserFriends, faAddressCard, faUserPen, faReceipt } from '@fortawesome/free-solid-svg-icons';
 import Search from '../Search';
 import styles from './Header.module.scss';
 
 const cx = classNames.bind(styles);
+library.add(faUserFriends, faAddressCard, faUserPen, faReceipt);
 
 export default function Header() {
     return (
@@ -57,25 +61,25 @@ export default function Header() {
                             </li>
                             <li className={cx('menu-item-container')}>
                                 <Link className={cx('menu-item')}>
-                                    <MenuIcon />
+                                    <FontAwesomeIcon icon="fa-user-friends" color="white" fontSize="2rem" />
                                     <span className={cx('menu-text')}>Giới thiệu</span>
                                 </Link>
                             </li>
                             <li className={cx('menu-item-container')}>
                                 <Link className={cx('menu-item')}>
-                                    <MenuIcon />
+                                    <FontAwesomeIcon icon="fa-solid fa-address-card" color="white" fontSize="2.2rem" />
                                     <span className={cx('menu-text')}>Liên hệ</span>
                                 </Link>
                             </li>
                             <li className={cx('menu-item-container')}>
                                 <Link className={cx('menu-item')}>
-                                    <MenuIcon />
+                                    <FontAwesomeIcon icon="fa-solid fa-user-pen" color="white" fontSize="2rem" />
                                     <span className={cx('menu-text')}>Góc tư vấn</span>
                                 </Link>
                             </li>
                             <li className={cx('menu-item-container')}>
                                 <Link className={cx('menu-item')}>
-                                    <MenuIcon />
+                                    <FontAwesomeIcon icon="fa-solid fa-receipt" color="white" fontSize="2rem" />
                                     <span className={cx('menu-text')}>Vào bếp</span>
                                 </Link>
                             </li>
