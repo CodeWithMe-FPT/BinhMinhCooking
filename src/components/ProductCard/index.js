@@ -1,4 +1,5 @@
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 import styles from './ProductCard.module.scss';
 
 const cx = classNames.bind(styles);
@@ -6,9 +7,9 @@ const cx = classNames.bind(styles);
 export default function ProductCard({ data }) {
     return (
         <div className={cx('ProductCardContainer')}>
-            <a className={cx('product-wrapper-link')}>
+            <Link className={cx('product-wrapper-link')}>
                 <img height="300" width="300" className={cx('product-img')} src={data.img} alt=""></img>
-            </a>
+            </Link>
             <h1 className={cx('product-title')}>{data.title}</h1>
             {data.promo.status && (
                 <div className={cx('product-promo-wrapper')}>
