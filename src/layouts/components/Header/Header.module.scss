@@ -1,5 +1,6 @@
 .header-main-container {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    background: #020224;
 }
 
 .banner-top {
@@ -21,7 +22,6 @@
 }
 
 .logo-web {
-    width: 75% !important;
     height: auto;
     max-width: 100%;
 }
@@ -29,6 +29,7 @@
 .logo {
     position: relative;
     height: 44px;
+    margin-right: 10%;
 }
 
 .link-web {
@@ -36,8 +37,8 @@
     display: flex;
     position: absolute;
     top: 0;
-    width: 153px;
-    height: 37px;
+    width: 105px;
+    height: 48px;
 }
 
 .phone-container {
@@ -59,7 +60,7 @@
 
 .phone-text {
     font-size: 14px;
-    color: black;
+    color: cyan;
 }
 
 .phone-number {
