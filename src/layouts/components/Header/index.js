@@ -6,6 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUserFriends, faAddressCard, faUserPen, faReceipt } from '@fortawesome/free-solid-svg-icons';
 import Search from '../Search';
 import styles from './Header.module.scss';
+import images from '~/assets/img';
 
 const cx = classNames.bind(styles);
 library.add(faUserFriends, faAddressCard, faUserPen, faReceipt);
@@ -21,12 +22,7 @@ export default function Header() {
                 <div className={cx('header-main')}>
                     <div className={cx('header-top-container')}>
                         <div className={cx('logo')}>
-                            <img
-                                width="205px"
-                                height="48px"
-                                className={cx('logo-web')}
-                                src="https://thietbibepviet.vn/wp-content/uploads/2022/10/logo-thiet-bi-bep-viet.png"
-                            ></img>
+                            <img width="205px" height="48px" className={cx('logo-web')} src={images.logo2}></img>
                             <Link to="/" className={cx('link-web')}></Link>
                         </div>
                         <Search />
