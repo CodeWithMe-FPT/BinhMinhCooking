@@ -22,7 +22,7 @@ export default function Header() {
                 <div className={cx('header-main')}>
                     <div className={cx('header-top-container')}>
                         <div className={cx('logo')}>
-                            <img width="205px" height="48px" className={cx('logo-web')} src={images.logo2}></img>
+                            <img width="105px" height="48px" className={cx('logo-web')} src={images.logo2}></img>
                             <Link to="/" className={cx('link-web')}></Link>
                         </div>
                         <Search />
